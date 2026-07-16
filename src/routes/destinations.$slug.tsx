@@ -70,7 +70,7 @@ function DestinationDetail() {
 
           <h2 className="mt-12 font-display text-2xl font-semibold">What you'll do</h2>
           <ul className="mt-4 grid gap-3 sm:grid-cols-2">
-            {d.highlights.map((h) => (
+            {d.highlights.map((h: string) => (
               <li key={h} className="flex items-start gap-3 rounded-lg border border-border bg-card p-4">
                 <span className="mt-1 size-2 shrink-0 rounded-full bg-primary" aria-hidden />
                 <span className="text-sm">{h}</span>
@@ -83,7 +83,7 @@ function DestinationDetail() {
 
           <h2 className="mt-12 font-display text-2xl font-semibold">Accessibility</h2>
           <ul className="mt-3 space-y-2 text-muted-foreground">
-            {d.accessibility.map((a) => (
+            {d.accessibility.map((a: string) => (
               <li key={a} className="flex items-start gap-2">
                 <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-accent" aria-hidden />
                 {a}
