@@ -99,7 +99,6 @@ function DestinationDetail() {
             <p className="text-sm text-muted-foreground">Recommended stay: {d.sols}</p>
             <Link
               to="/plan"
-              search={{ dest: d.slug }}
               className="mt-6 flex w-full items-center justify-center rounded-md bg-primary px-4 py-3 text-sm font-medium text-primary-foreground shadow-glow hover:opacity-90"
             >
               Add to itinerary
